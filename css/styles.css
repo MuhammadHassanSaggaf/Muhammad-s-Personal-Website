@@ -4,7 +4,7 @@ body {
   font-family: 'Merriweather', serif;
   margin: 0;
   padding: 0;
-  background-image: url('/images/filippo-cesarini-YkY6Lokbcc4-unsplash.jpg');
+  background-image: url('/images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -17,7 +17,7 @@ nav {
   height: 80px;
   border-radius: 8px;
 }
- nav h1 {
+nav h1 {
   font-family: 'Merriweather', serif;
   font-size: 30px;
   color: #e9f8ff;
@@ -26,9 +26,9 @@ nav {
   justify-content: center;
   align-items: center;
   margin: 0;
- }
+}
 
- nav ul {
+nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -36,7 +36,12 @@ nav {
   justify-content: space-evenly;
   gap: 20px;
 }
-
+nav ul li:hover {
+  
+  border-radius: 30px;
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: transform 0.4s ease-in;}
 #home {
   display: flex;
   flex-direction: row;
