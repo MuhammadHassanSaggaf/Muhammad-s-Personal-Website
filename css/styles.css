@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
-
+html {
+  scroll-behavior: smooth;
+  
+}
 body {
   font-family: 'Merriweather', serif;
   margin: 0;
   padding: 0;
-  background: url("../images/background.jpg") no-repeat center/cover;;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(236, 236, 236, 0.658);
 
 }
 nav {
-  background-color:#3c3a3c;
+  background-color:rgba(29, 29, 29, 0.822);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -20,7 +21,7 @@ nav {
 nav h1 {
   font-family: 'Merriweather', serif;
   font-size: 30px;
-  color: #e9f8ff;
+  color: #D8E0E0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -54,19 +55,23 @@ nav ul li:hover {
 #home img {
   width: 200px;
   max-width: 600px;
-  border-radius: 200px;
+  border-radius: 100px;
+  height: 350px;
+  object-fit: cover;
+
 }
 
 #home div h1 {
   font-size: 30px;
-  color: #897b78;
+  color: #3E2F28;
   text-align: center;
   font-style: italic;
+  font-weight: bold;
 }
 
 #home div p {
   font-size: 20px;
-  color: #897b78;
+  color: #3E2F28;
   text-align: center;
 }
 
@@ -81,7 +86,7 @@ nav ul li:hover {
 
 #about h2 {
   font-size: 30px;
-  color: #897b78;
+  color: #3E2F28;
   text-align: center;
   font-style: italic;
   width: 150px;
@@ -95,10 +100,11 @@ nav ul li:hover {
   cursor: pointer;
   transform: translateY(-2px);
   transition: transform 0.3s ease-in;
+  box-shadow: #3c3a3c 2px 5px 10px;
 }
 #about p {
   font-size: 20px;
-  color: #ffffff;
+  color: #3E2F28;
   text-align: center;
   width: 80%;
   margin: 10px;
@@ -115,7 +121,7 @@ nav ul li:hover {
 
 #skills h2 {
   font-size: 30px;
-  color: #d6c0bb;
+  color: #3E2F28;
   text-align: center;
   font-style: italic;
   width: 100px;
@@ -129,6 +135,7 @@ nav ul li:hover {
   cursor: pointer;
   transform: translateY(-2px);
   transition: transform 0.3s ease-in;
+  box-shadow: #3c3a3c 2px 5px 10px;
 }
 
 #skills ul {
@@ -141,11 +148,11 @@ nav ul li:hover {
 }
 #skills li {
   font-size: 20px;
-  color: #1a191a;
+  color: #3E2F28;
   text-align: center;
   padding: 10px;
   border-radius: 8px;
-  color: #f0d8d2;
+  color: #3E2F28;
 
 }
 #skills li:hover {
@@ -155,6 +162,7 @@ nav ul li:hover {
   cursor: pointer;
   transform: translateY(-2px);
   transition: transform 0.3s ease-in;
+  box-shadow: #3c3a3c 2px 5px 10px;
 }
 
 #contact {
@@ -167,7 +175,7 @@ nav ul li:hover {
 }
 #contact h2 {
   font-size: 30px;
-  color: #ffe1da;
+  color: #3E2F28;
   text-align: center;
   font-style: italic;
   width: 120px;
@@ -180,11 +188,12 @@ nav ul li:hover {
   transition: background-color 0.5s ease, color 0.5s ease;
   border-radius: 30px;
   cursor: pointer;
+  box-shadow: #3c3a3c 2px 5px 10px;
 }
 
 #contact p {
   font-size: 20px;
-  color: #f8f4f8;
+  color: #3E2F28;
   text-align: center;
   width: 80%;
 }
@@ -208,6 +217,7 @@ nav ul li:hover {
 #contact ul li a img:hover {
   transform: translateY(-5px);
   transition: 0.3s ease-in ;
+  box-shadow: #3c3a3c 2px 5px 10px;
 }
 #contact ul {
   display: flex;
