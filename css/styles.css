@@ -37,13 +37,7 @@ nav ul {
   justify-content: space-evenly;
   gap: 20px;
 }
-nav ul li:hover {
-  
-  border-radius: 30px;
-  cursor: pointer;
-  transform: translateY(-3px);
-  transform: scale(1.2);
-  transition: transform 0.4s ease-in;}
+
 #home {
   display: flex;
   flex-direction: row;
