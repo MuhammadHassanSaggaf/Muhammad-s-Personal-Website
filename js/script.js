@@ -1,16 +1,21 @@
-const navIcons = document.querySelectorAll('nav img');
+const nav = document.querySelector('nav');
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav-links a');
 
-navIcons.forEach((img) => {
-
-  img.addEventListener('mouseover', () => {
-    img.style.transform = 'scale(1.3) translateY(-3px)';
-    img.style.transition = 'transform 0.3s ease-in-out';
+if (nav && navToggle) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+    document.body.classList.toggle('nav-open', isOpen);
   });
 
-  img.addEventListener('mouseout', () => {
-    img.style.transform = 'scale(1)';
-    img.style.transition = 'transform 0.2s ease-in-out';
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      if (nav.classList.contains('is-open')) {
+        nav.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-open');
+      }
+    });
   });
-
-  
-});
+}
