@@ -236,4 +236,161 @@ nav ul {
   margin: 0;
   font-size: 15px;
 }
+/* === Responsive overrides: paste at the end of styles.css === */
+
+/* Make images fluid by default (safe global rule) */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tablet / small laptop */
+@media (max-width: 1024px) {
+  nav {
+    padding: 14px;
+    border-radius: 6px;
+  }
+  nav h1 {
+    font-size: 24px;
+  }
+  #home img {
+    width: 260px;
+    height: auto;
+  }
+  #home div h1 { font-size: 26px; }
+  #home div p { font-size: 18px; }
+  #about p, #contact p { font-size: 18px; width: 90%; }
+}
+
+/* Mobile landscape & portrait */
+@media (max-width: 768px) {
+  /* Nav stacks vertically for easier tapping */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    height: auto; /* remove fixed height */
+  }
+
+  nav h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  nav ul {
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav ul li a img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+  }
+
+  /* Stack hero vertically */
+  #home {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 20px;
+    padding: 0 12px;
+  }
+
+  #home img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  #home div h1 { font-size: 22px; }
+  #home div p { font-size: 16px; }
+
+  /* Sections use full width with padding */
+  #about, #skills, #contact {
+    margin-top: 60px;
+    padding: 0 14px;
+    width: 100%;
+  }
+
+  #about h2, #skills h2, #contact h2 {
+    font-size: 22px;
+    width: auto;
+    padding: 8px 12px;
+  }
+
+  #about p {
+    font-size: 16px;
+    width: 100%;
+    margin: 8px 0;
+    text-align: left;
+  }
+
+  /* Skills convert to vertical stack for small screens */
+  #skills ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  #skills li {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Contact icons: slightly larger touch targets & centered */
+  #contact ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+  }
+
+  #contact ul li a img {
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+    border-radius: 12px;
+  }
+
+  /* Footer spacing */
+  #footer {
+    margin-top: 80px;
+    padding: 14px 10px;
+    height: auto;
+  }
+
+  #footer p {
+    font-size: 14px;
+  }
+}
+
+/* Ultra small phones */
+@media (max-width: 420px) {
+  nav h1 { font-size: 18px; }
+  nav ul li a img { width: 32px; height: 32px; }
+  #home img { width: 140px; height: 140px; }
+  #home div h1 { font-size: 20px; }
+  #home div p, #about p, #contact p { font-size: 15px; }
+  #skills li { font-size: 16px; padding: 8px; }
+  #contact ul li a img { width: 48px; height: 48px; padding: 6px; }
+}
+
+/* Accessibility / touch-friendly: add larger hitboxes for tappable list items */
+nav ul li a,
+#contact ul li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  touch-action: manipulation;
+}
 
