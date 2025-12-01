@@ -417,7 +417,8 @@ nav.is-open .nav-links {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-inline: 2rem;
+    padding-left: 2rem;
+    padding-right: 3rem;
     margin-top: 0;
     width: 100%;
   }
