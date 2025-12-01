@@ -28,11 +28,18 @@ img {
 main {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1.5rem 1.25rem 3rem;
+  padding: 1.75rem 1.25rem 3.5rem;
 }
 
-section {
-  margin-top: 3rem;
+.section {
+  margin-top: 3.5rem;
+}
+
+.section-inner {
+  background-color: rgba(255, 255, 255, 0.76);
+  border-radius: 18px;
+  padding: 1.75rem 1.4rem;
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.08);
 }
 
 /* ===== Navbar (mobile-first) ===== */
@@ -86,15 +93,41 @@ nav ul li a img {
 }
 
 /* ===== Hero / Home ===== */
-#home {
+.section--hero {
+  margin-top: 2.5rem;
+}
+
+#home.section--hero .section-inner.hero-inner {
   display: flex;
   flex-direction: column;
+  gap: 1.75rem;
   align-items: center;
-  gap: 1.2rem;
+}
+
+.hero-text {
   text-align: center;
 }
 
-#home img {
+.hero-text .eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #3c3a3c;
+}
+
+.hero-subtitle {
+  margin: 0.6rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.hero-media {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-media img {
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
@@ -102,7 +135,7 @@ nav ul li a img {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
-#home h1 {
+.hero-text h1 {
   margin: 0;
   font-size: 1.7rem;
   font-weight: 700;
@@ -110,68 +143,61 @@ nav ul li a img {
   letter-spacing: 0.03em;
 }
 
-#home p {
-  margin: 0.25rem 0 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
+/* ===== Generic section heading styles ===== */
+.section-header {
+  text-align: left;
+  margin-bottom: 1.1rem;
 }
 
-/* ===== Generic section heading styles ===== */
-section h2 {
+.section-header .eyebrow {
+  margin: 0 0 0.25rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #3c3a3c;
+}
+
+.section-header h2 {
   margin: 0 0 0.9rem;
   font-size: 1.4rem;
   font-weight: 700;
   font-style: italic;
-  text-align: center;
-  display: inline-block;
-  padding: 0.4rem 1.2rem;
-  border-radius: 999px;
+  text-align: left;
   color: #3E2F28;
   letter-spacing: 0.04em;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-section h2:hover {
-  background-color: #3c3a3c;   /* keep hover color scheme */
-  color: #e9f8ff;
-  cursor: pointer;
-  transform: translateY(-2px);
-  box-shadow: #3c3a3c 0 4px 12px;
 }
 
 /* ===== About section ===== */
-#about {
-  text-align: left;
-}
-
 #about p {
   margin: 0.35rem 0;
   font-size: 1rem;
   line-height: 1.7;
 }
 
-/* ===== Skills section ===== */
-#skills ul {
-  list-style: none;
-  margin: 0;
-  margin-top: 0.75rem;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+.skills-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.9rem;
 }
 
-#skills li {
-  font-size: 1rem;
-  padding: 0.6rem 0.9rem;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
+.skill-card {
+  padding: 0.75rem 1rem;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #3E2F28;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  text-align: center;
 }
 
-#skills li:hover {
+.skill-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.skill-card:hover {
   background-color: #3c3a3c; /* keep hover color palette */
   color: #e9f8ff;
   cursor: pointer;
@@ -180,27 +206,20 @@ section h2:hover {
 }
 
 /* ===== Contact section ===== */
-#contact {
-  text-align: center;
-}
-
 #contact p {
   margin: 0.35rem 0 1.1rem;
   font-size: 1rem;
   line-height: 1.6;
 }
 
-#contact ul {
-  list-style: none;
+.social-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
+  justify-content: flex-start;
+  gap: 0.9rem;
 }
 
-#contact ul li a {
+.social-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -208,7 +227,7 @@ section h2:hover {
   touch-action: manipulation;
 }
 
-#contact ul li a img {
+.social-links a img {
   width: 3rem;
   height: 3rem;
   background-color: #3c3a3c; /* keep icon background color */
@@ -218,7 +237,7 @@ section h2:hover {
   cursor: pointer;
 }
 
-#contact ul li a img:hover {
+.social-links a img:hover {
   transform: translateY(-4px);
   box-shadow: #3c3a3c 0 6px 14px;
 }
@@ -264,24 +283,23 @@ section h2:hover {
     padding-inline: 2rem;
   }
 
-  #home {
+  #home.section--hero .section-inner.hero-inner {
     flex-direction: row;
     align-items: center;
+  }
+
+  .hero-text {
     text-align: left;
   }
 
-  #home img {
+  .hero-media img {
     width: 11rem;
     height: 11rem;
-    margin-right: 1.5rem;
+    margin-left: 1.75rem;
   }
 
-  #home h1 {
+  .hero-text h1 {
     font-size: 1.9rem;
-  }
-
-  #home p {
-    font-size: 1.05rem;
   }
 
   #about p,
@@ -289,14 +307,8 @@ section h2:hover {
     font-size: 1.05rem;
   }
 
-  #skills ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  #skills li {
-    min-width: 7rem;
-    text-align: center;
+  .skills-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
@@ -309,12 +321,12 @@ section h2:hover {
     padding-inline: 3rem;
   }
 
-  #home img {
+  .hero-media img {
     width: 13rem;
     height: 13rem;
   }
 
-  #home h1 {
+  .hero-text h1 {
     font-size: 2.1rem;
   }
 }

@@ -22,48 +22,80 @@
   </header>
 
   <main>
-    <!-- This is the home section  -->
-    <section id="home">
-      <img src="./images/20230410_144110.jpg" alt="Portrait of Muhammad Saggaf">
-      <div>
-        <h1>Welcome to my Personal Website</h1>
-        <p>I am Muhammad Saggaf and I am a Full-Stack Software Developer</p>
+    <!-- Hero-style home section -->
+    <section id="home" class="section section--hero">
+      <div class="section-inner hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Full-Stack Software Developer</p>
+          <h1>Welcome to my Personal Website</h1>
+          <p class="hero-subtitle">
+            I am Muhammad Saggaf and I am a Full-Stack Software Developer.
+          </p>
+        </div>
+        <div class="hero-media">
+          <img src="./images/20230410_144110.jpg" alt="Portrait of Muhammad Saggaf">
+        </div>
       </div>
     </section>
 
-    <!-- This is the About Section -->
-    <section id="about">
-      <h2>About me</h2>
-      <p>I am a Full-Stack Software Developer with a passion for creating innovative solutions for both personal needs and businesses. I have experience in various programming languages and frameworks, and I enjoy working on challenging projects that push my limits.</p>
-      <p>In my free time, I love to explore new technologies, contribute to open-source projects, and continuously improve my skills. I believe in the power of collaboration and am always eager to learn from others in the tech community.</p>
-      <p>To me, coding is my therapy</p>
-      <p>Feel free to connect with me on social media or check out my projects on GitHub!</p>
+    <!-- About Section -->
+    <section id="about" class="section section--about">
+      <div class="section-inner">
+        <header class="section-header">
+          <p class="eyebrow">About</p>
+          <h2>About me</h2>
+        </header>
+        <div class="section-body">
+          <p>I am a Full-Stack Software Developer with a passion for creating innovative solutions for both personal needs and businesses. I have experience in various programming languages and frameworks, and I enjoy working on challenging projects that push my limits.</p>
+          <p>In my free time, I love to explore new technologies, contribute to open-source projects, and continuously improve my skills. I believe in the power of collaboration and am always eager to learn from others in the tech community.</p>
+          <p>To me, coding is my therapy</p>
+          <p>Feel free to connect with me on social media or check out my projects on GitHub!</p>
+        </div>
+      </div>
     </section>
 
-    <!-- This is the skills section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>AWS</li>
-        <li>Django</li>
-        <li>Flask</li>
-        <li>Docker</li>
-      </ul>
+    <!-- Skills section (cards in a grid) -->
+    <section id="skills" class="section section--skills">
+      <div class="section-inner">
+        <header class="section-header">
+          <p class="eyebrow">What I work with</p>
+          <h2>Skills</h2>
+        </header>
+        <div class="section-body skills-grid">
+          <article class="skill-card"><h3>Python</h3></article>
+          <article class="skill-card"><h3>HTML</h3></article>
+          <article class="skill-card"><h3>CSS</h3></article>
+          <article class="skill-card"><h3>JavaScript</h3></article>
+          <article class="skill-card"><h3>AWS</h3></article>
+          <article class="skill-card"><h3>Django</h3></article>
+          <article class="skill-card"><h3>Flask</h3></article>
+          <article class="skill-card"><h3>Docker</h3></article>
+        </div>
+      </div>
     </section>
 
-    <!-- This is the contact section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>If you would like to get in touch, please feel free to reach out via my social media linked below </p>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/muhammad-saggaf-736259303/" target="_blank"><img src="./images/icons8-linkedin-60.png" alt="Linkedin"></a></li>
-        <li><a href="https://github.com/MuhammadHassanSaggaf" target="_blank"><img src="./images/icons8-github-64.png" alt="Github"></a></li>
-        <li><a href="mailto:muhammadsaggaf2004@gmail.com" target="_blank"><img src="./images/icons8-gmail-logo-64.png" alt="Email"></a></li>
-      </ul>
+    <!-- Contact section -->
+    <section id="contact" class="section section--contact">
+      <div class="section-inner">
+        <header class="section-header">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Contact</h2>
+        </header>
+        <div class="section-body">
+          <p>If you would like to get in touch, please feel free to reach out via my social media linked below.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/muhammad-saggaf-736259303/" target="_blank">
+              <img src="./images/icons8-linkedin-60.png" alt="Linkedin">
+            </a>
+            <a href="https://github.com/MuhammadHassanSaggaf" target="_blank">
+              <img src="./images/icons8-github-64.png" alt="Github">
+            </a>
+            <a href="mailto:muhammadsaggaf2004@gmail.com" target="_blank">
+              <img src="./images/icons8-gmail-logo-64.png" alt="Email">
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
