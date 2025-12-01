@@ -259,6 +259,10 @@ nav ul li a img {
 
 /* ===== Larger screen enhancements (tablet & desktop) ===== */
 @media (max-width: 600px) {
+  body {
+    font-size: 0.98rem;
+  }
+
   header {
     position: sticky;
     top: 0;
@@ -276,6 +280,16 @@ nav ul li a img {
     border-radius: 16px;
     padding: 1.25rem 1.1rem;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .hero-text h1 {
+    font-size: 1.55rem;
+  }
+
+  .hero-subtitle,
+  #about p,
+  #contact p {
+    font-size: 0.98rem;
   }
 
   .hero-media img {
