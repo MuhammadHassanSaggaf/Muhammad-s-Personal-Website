@@ -141,10 +141,12 @@ nav.is-open .nav-links {
   font-size: 0.85rem;
 }
 
-.nav-links a:hover,
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
 .nav-links a:focus-visible {
-  background-color: rgba(216, 224, 224, 0.12);
-  border-radius: 999px;
+  outline: none;
 }
 
 /* ===== Hero / Home ===== */
@@ -336,12 +338,12 @@ nav.is-open .nav-links {
   }
 
   .section {
-    margin-top: 1.5rem;         /* tighter vertical spacing between sections */
+    margin-top: 0.75rem;        /* tighter vertical spacing between sections */
   }
 
   .section-inner {
     border-radius: 16px;
-    padding: 1.1rem 1rem;       /* slightly slimmer cards on mobile */
+    padding: 0.9rem 0.85rem;    /* more compact cards on mobile */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   }
 
@@ -350,7 +352,7 @@ nav.is-open .nav-links {
   .section--about,
   .section--skills,
   .section--contact {
-    min-height: 100vh;          /* one full viewport per section */
+    min-height: 95vh;           /* still roughly one screen, with less empty space */
     display: flex;
     align-items: center;
     scroll-snap-align: start;
