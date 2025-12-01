@@ -38,7 +38,7 @@ main {
 }
 
 .section + .section {
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 .section-inner {
@@ -155,7 +155,7 @@ nav.is-open .nav-links {
 
 /* ===== Hero / Home ===== */
 .section--hero {
-  margin-top: 1rem;
+  margin-top: 0.25rem;
 }
 
 #home.section--hero .section-inner.hero-inner {
@@ -167,14 +167,6 @@ nav.is-open .nav-links {
 
 .hero-text {
   text-align: center;
-}
-
-.hero-text .eyebrow {
-  margin: 0;
-  font-size: 0.8rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #3c3a3c;
 }
 
 .hero-subtitle {
@@ -208,14 +200,6 @@ nav.is-open .nav-links {
 .section-header {
   text-align: left;
   margin-bottom: 1.1rem;
-}
-
-.section-header .eyebrow {
-  margin: 0 0 0.25rem;
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #3c3a3c;
 }
 
 .section-header h2 {
@@ -356,7 +340,7 @@ nav.is-open .nav-links {
   .section--about,
   .section--skills,
   .section--contact {
-    min-height: calc(100vh - 80px); /* match viewport minus sticky nav */
+    min-height: 90vh; /* still nearly full screen with less extra space */
     display: flex;
     align-items: center;
     scroll-snap-align: start;
