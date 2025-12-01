@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Merriweather:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 /* ===== Base reset & layout ===== */
 *,
@@ -15,7 +15,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Cinzel Decorative', serif;
+  font-family: 'Merriweather', serif;
   background-color: rgba(236, 236, 236, 0.658); /* keep your background color */
   color: #3E2F28; /* keep your text color */
   min-height: 100vh;
@@ -78,6 +78,7 @@ nav {
 }
 
 nav h1 {
+  font-family: 'Cinzel Decorative', serif;
   margin: 0;
   font-size: 1.35rem;
   font-weight: 700;
@@ -141,8 +142,8 @@ nav.is-open .nav-links {
   color: #D8E0E0;
   text-decoration: none;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   font-size: 0.85rem;
+  font-family: 'Merriweather', serif;
 }
 
 .nav-links a:hover {
@@ -173,6 +174,7 @@ nav.is-open .nav-links {
   margin: 0.6rem 0 0;
   font-size: 0.95rem;
   line-height: 1.7;
+  font-family: 'Merriweather', serif;
 }
 
 .hero-media {
@@ -189,6 +191,7 @@ nav.is-open .nav-links {
 }
 
 .hero-text h1 {
+  font-family: 'Cinzel Decorative', serif;
   margin: 0;
   font-size: 1.7rem;
   font-weight: 700;
@@ -203,6 +206,7 @@ nav.is-open .nav-links {
 }
 
 .section-header h2 {
+  font-family: 'Cinzel Decorative', serif;
   margin: 0 0 0.9rem;
   font-size: 1.4rem;
   font-weight: 700;
@@ -217,6 +221,7 @@ nav.is-open .nav-links {
   margin: 0.35rem 0;
   font-size: 1rem;
   line-height: 1.7;
+  font-family: 'Merriweather', serif;
 }
 
 .skills-grid {
@@ -236,6 +241,7 @@ nav.is-open .nav-links {
 }
 
 .skill-card h3 {
+  font-family: 'Cinzel Decorative', serif;
   margin: 0;
   font-size: 1rem;
   font-weight: 700;
@@ -255,6 +261,7 @@ nav.is-open .nav-links {
   margin: 0.35rem 0 1.1rem;
   font-size: 1rem;
   line-height: 1.6;
+  font-family: 'Merriweather', serif;
 }
 
 .social-links {
@@ -300,6 +307,7 @@ nav.is-open .nav-links {
   color: #3E2F28;
   text-decoration: none;
   letter-spacing: 0.02em;
+  font-family: 'Merriweather', serif;
 }
 
 .contact-details a:hover {
