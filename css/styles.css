@@ -28,18 +28,18 @@ img {
 main {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 1.75rem 1.25rem 3.5rem;
+  padding: 1.5rem 1.1rem 3rem;
 }
 
 .section {
-  margin-top: 3.5rem;
+  margin-top: 3.25rem;
 }
 
 .section-inner {
   background-color: rgba(255, 255, 255, 0.76);
   border-radius: 18px;
-  padding: 1.75rem 1.4rem;
-  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 1.25rem;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
 }
 
 /* ===== Navbar (mobile-first) ===== */
@@ -258,6 +258,42 @@ nav ul li a img {
 }
 
 /* ===== Larger screen enhancements (tablet & desktop) ===== */
+@media (max-width: 600px) {
+  header {
+    position: sticky;
+    top: 0;
+  }
+
+  nav {
+    border-radius: 0 0 16px 16px;
+  }
+
+  .section {
+    margin-top: 2.75rem;
+  }
+
+  .section-inner {
+    border-radius: 16px;
+    padding: 1.25rem 1.1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .hero-media img {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+
+  .skill-card {
+    padding: 0.7rem 0.9rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+  }
+
+  .social-links a img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+
 @media (min-width: 720px) {
   nav {
     border-radius: 0;
