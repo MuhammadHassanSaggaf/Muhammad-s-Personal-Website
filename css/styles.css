@@ -274,15 +274,21 @@ nav ul li a img {
 
   nav {
     border-radius: 0 0 16px 16px;
+    padding: 0.6rem 1rem;       /* smaller navbar height on mobile */
+    gap: 0.5rem;
+  }
+
+  nav h1 {
+    font-size: 1.1rem;          /* reduce title size on mobile */
   }
 
   .section {
-    margin-top: 2.75rem;
+    margin-top: 1.5rem;         /* tighter vertical spacing between sections */
   }
 
   .section-inner {
     border-radius: 16px;
-    padding: 1.25rem 1.1rem;
+    padding: 1.1rem 1rem;       /* slightly slimmer cards on mobile */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   }
 
@@ -291,7 +297,7 @@ nav ul li a img {
   .section--about,
   .section--skills,
   .section--contact {
-    min-height: 100vh;
+    min-height: 100vh;          /* one full viewport per section */
     display: flex;
     align-items: center;
     scroll-snap-align: start;
