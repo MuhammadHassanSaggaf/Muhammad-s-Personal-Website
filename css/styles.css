@@ -220,10 +220,18 @@ nav.is-open .nav-links {
 
 /* ===== About section ===== */
 #about p {
-  margin: 0.35rem 0;
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 1.5rem;
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.8;
   font-family: 'Merriweather', serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#about p:last-child {
+  border-bottom: none;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0;
 }
 
 .skills-grid {
@@ -360,8 +368,9 @@ nav.is-open .nav-links {
 
   .section-inner {
     border-radius: 14px;
-    padding: 0.8rem 0.75rem;    /* tighter cards on mobile */
+    padding: 1.2rem 1rem;    /* increased padding for better mobile spacing */
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    margin: 0.5rem 0;
   }
 
   /* Aim for one primary section per screen scroll on mobile */
@@ -369,9 +378,9 @@ nav.is-open .nav-links {
   .section--about,
   .section--skills,
   .section--contact {
-    min-height: 90vh; /* still nearly full screen with less extra space */
-    display: flex;
-    align-items: center;
+    min-height: auto;
+    padding: 1.5rem 0;
+    display: block;
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
@@ -394,7 +403,8 @@ nav.is-open .nav-links {
   .hero-subtitle,
   #about p,
   #contact p {
-    font-size: 0.98rem;
+    font-size: 1rem;
+    line-height: 1.8;
   }
 
   .hero-media img {
