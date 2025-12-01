@@ -413,12 +413,13 @@ nav.is-open .nav-links {
 
 @media (min-width: 720px) {
   nav {
-    border-radius: 28px;
+    border-radius: 0 0 24px 24px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-inline: 2rem;
-    margin-top: 1.25rem;
+    margin-top: 0;
+    width: 100%;
   }
 
   nav h1 {
