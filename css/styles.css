@@ -282,6 +282,23 @@ nav ul li a img {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   }
 
+  /* Aim for one primary section per screen scroll on mobile */
+  .section--hero,
+  .section--about,
+  .section--skills,
+  .section--contact {
+    min-height: calc(100vh - 130px); /* account for sticky nav + spacing */
+    display: flex;
+    align-items: center;
+  }
+
+  .section--hero .section-inner,
+  .section--about .section-inner,
+  .section--skills .section-inner,
+  .section--contact .section-inner {
+    width: 100%;
+  }
+
   .hero-text h1 {
     font-size: 1.55rem;
   }
