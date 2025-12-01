@@ -42,10 +42,11 @@ main {
 }
 
 .section-inner {
-  background-color: rgba(255, 255, 255, 0.76);
-  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
   padding: 1.5rem 1.25rem;
-  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 /* ===== Navbar (mobile-first) ===== */
@@ -56,13 +57,16 @@ header {
 }
 
 nav {
-  background-color: rgba(29, 29, 29, 0.9); /* keep navbar color */
-  padding: 0.9rem 1.25rem;
+  background: rgba(20, 20, 20, 0.92);
+  padding: 0.95rem 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border-radius: 0 0 12px 12px;
-  transition: padding 0.2s ease;
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  transition: padding 0.2s ease, border-radius 0.2s ease;
 }
 
 .nav-brand {
@@ -75,7 +79,7 @@ nav {
 
 nav h1 {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: #D8E0E0; /* keep nav font color */
   letter-spacing: 0.04em;
@@ -151,7 +155,7 @@ nav.is-open .nav-links {
 
 /* ===== Hero / Home ===== */
 .section--hero {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 
 #home.section--hero .section-inner.hero-inner {
@@ -328,8 +332,8 @@ nav.is-open .nav-links {
   }
 
   nav {
-    border-radius: 0 0 16px 16px;
-    padding: 0.6rem 1rem;       /* smaller navbar height on mobile */
+    border-radius: 0 0 24px 24px;
+    padding: 0.55rem 0.9rem;    /* smaller navbar height on mobile */
     gap: 0.5rem;
   }
 
@@ -398,11 +402,12 @@ nav.is-open .nav-links {
 
 @media (min-width: 720px) {
   nav {
-    border-radius: 0;
+    border-radius: 28px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-inline: 2rem;
+    margin-top: 1.25rem;
   }
 
   nav h1 {
