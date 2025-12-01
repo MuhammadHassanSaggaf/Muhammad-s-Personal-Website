@@ -70,7 +70,7 @@ nav {
 }
 
 .nav-brand {
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -144,10 +144,12 @@ nav.is-open .nav-links {
   letter-spacing: 0.08em;
   font-size: 0.85rem;
   font-family: 'Merriweather', serif;
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
+  opacity: 0.8;
 }
 
 .nav-links a:focus-visible {
