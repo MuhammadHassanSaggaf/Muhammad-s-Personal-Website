@@ -338,13 +338,13 @@ nav.is-open .nav-links {
   }
 
   .section {
-    margin-top: 0.75rem;        /* tighter vertical spacing between sections */
+    margin: 0;                  /* no extra gap between sections */
   }
 
   .section-inner {
-    border-radius: 16px;
-    padding: 0.9rem 0.85rem;    /* more compact cards on mobile */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    padding: 0.8rem 0.75rem;    /* tighter cards on mobile */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   }
 
   /* Aim for one primary section per screen scroll on mobile */
@@ -352,7 +352,7 @@ nav.is-open .nav-links {
   .section--about,
   .section--skills,
   .section--contact {
-    min-height: 95vh;           /* still roughly one screen, with less empty space */
+    min-height: calc(100vh - 80px); /* match viewport minus sticky nav */
     display: flex;
     align-items: center;
     scroll-snap-align: start;
