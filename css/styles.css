@@ -287,6 +287,25 @@ nav.is-open .nav-links {
   box-shadow: #3c3a3c 0 6px 14px;
 }
 
+.contact-details {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contact-details a {
+  color: #3E2F28;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
 /* ===== Footer ===== */
 #footer {
   background-color: #3c3a3c; /* keep footer color */
