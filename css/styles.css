@@ -430,7 +430,7 @@ nav.is-open .nav-links {
   .nav-links {
     flex-direction: row;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2.25rem;
     max-height: none;
     width: auto;
   }
@@ -450,7 +450,7 @@ nav.is-open .nav-links {
   }
 
   main {
-    padding-inline: 2rem;
+    padding-inline: 2.5rem;
   }
 
   #home.section--hero .section-inner.hero-inner {
