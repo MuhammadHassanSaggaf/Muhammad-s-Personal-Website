@@ -434,6 +434,7 @@ nav.is-open .nav-links {
     gap: 2.25rem;
     max-height: none;
     width: auto;
+    margin-right: 1rem;
   }
 
   .nav-links li {
